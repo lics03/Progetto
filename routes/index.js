@@ -30,12 +30,12 @@ router.get('/', function(req, res, next) {
 });
 /*--------------------------------------------------------------------> INIZIO SEZIONE ISCRIZIONE <--------------------------------------------------------------*/
 
-/*var POSTMARK_TOKEN='';
+var POSTMARK_TOKEN='';
 var EMAIL='';
 var html=fs.readFileSync(__dirname+"/../public/html/postmark.html","utf-8");
 
 /*url per la gestione della form utile all'iscrizione*/
-/*router.get('/signup',function(req,res,next){
+router.get('/signup',function(req,res,next){
     var options = {
     root: __dirname + "/../public/html",
     headers: {
@@ -58,7 +58,7 @@ var html=fs.readFileSync(__dirname+"/../public/html/postmark.html","utf-8");
 
 
 /*Invio della form con iscrizione via email attraverso postmark*/
-/*router.post('/signup/confirm', function(req, res, next) {
+router.post('/signup/confirm', function(req, res, next) {
     var url='https://api.postmarkapp.com/email';
     var headers={
         'Accept': 'application/json',
@@ -88,7 +88,7 @@ var html=fs.readFileSync(__dirname+"/../public/html/postmark.html","utf-8");
 });
 
 /*reindirizzamento del link a cui si accede dall'email ricevuta da postmark*/
-/*router.get('/signup/confirm/success',function(req,res,next){
+router.get('/signup/confirm/success',function(req,res,next){
     var options = {
     root: __dirname + "/../public/html/",
     headers: {
@@ -115,8 +115,8 @@ var html=fs.readFileSync(__dirname+"/../public/html/postmark.html","utf-8");
 /*-----------------------------------------------------------------------------------> INIZIO SEZIONE LOGIN FACEBOOK <---------------------------------------------------------------------------------*/
 
 
-var APP_ID_FACEBOOK='780809985384762';
-var APP_SECRET_FB='7e26fb0676cf04885923bacd0aa8f5d0';
+var APP_ID_FACEBOOK='';
+var APP_SECRET_FB='';
 var URL_OAUTH='https://graph.facebook.com/v2.3/oauth/access_token?';
 var URL='https://www.facebook.com/dialog/oauth?client_id='+APP_ID_FACEBOOK+'&redirect_uri=https://application-jessicab.rhcloud.com/FBLogin/confirm';
 var access_token;
